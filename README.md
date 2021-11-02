@@ -10,6 +10,7 @@
 1. Edit `kustomization.yaml` to add patches for each kind you would like to apply a patch to. Ensure that the patch file
 includes the patch to add a lablel. 
 
+1. Install Consul K8s with the `--post-renderer` flag applied. 
 ```
 helm install consul-deployment hashicorp/consul --version "0.35.0" --create-namespace -n consul -f ./server-config.yaml --post-renderer ./kustomize-postrenderer.sh  
 ```
