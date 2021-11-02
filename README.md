@@ -1,5 +1,9 @@
 # kustomize-consul-k8s
 
+## Overview 
+
+This Github project provides an example on how to add labels to your Consul K8s resources, by leveraging `kustomize`.
+
 ## Pre-requisites
 
 - kustomize
