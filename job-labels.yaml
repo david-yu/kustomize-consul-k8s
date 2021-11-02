@@ -1,0 +1,9 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-name
+spec:
+  template:
+    metadata:
+      labels:
+        extra-label: extra-label-value

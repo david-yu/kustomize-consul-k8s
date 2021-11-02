@@ -1,0 +1,15 @@
+resources:
+  - all.yaml
+patches:
+  - path: deployment-labels.yaml
+    target:
+      kind: Deployment
+  - path: serviceaccount-labels.yaml
+    target:
+      kind: ServiceAccount
+  - path: job-labels.yaml
+    target: 
+      kind: Job
+  - path: service-labels.yaml
+    target: 
+      kind: Service
